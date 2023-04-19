@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-public class XMLClass2 {
+public class Class1 {
 
     @Getter
     @Setter

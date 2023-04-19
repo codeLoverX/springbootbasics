@@ -4,6 +4,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
+/*
+basically has:
+1) @CompnentScan (com.example.DependencyInjection.*)
+2) @Configuration (can write config here too)
+3)
+*/
+
 @EnableWebMvc
 public class DependencyInjectionApplication {
 
@@ -12,3 +19,24 @@ public class DependencyInjectionApplication {
 	}
 
 }
+
+/*
+
+Spring multiple ways of defining everything:
+
+1. defining configutation for entire class:
+	a) annotations
+	b) xml
+	c) combination
+2. loading configuration file
+	a) application context (not preferred)
+	b) @inject
+3. defining the class itself as a dependency: :
+	a) annotations
+	b) xml
+	c) combination
+4. injecting dependencies:
+	a) application context (not preferred)
+	b) annotation especially @Autowired @@Inject
+
+*/

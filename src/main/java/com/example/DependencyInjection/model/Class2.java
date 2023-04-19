@@ -4,11 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @AllArgsConstructor
 @NoArgsConstructor
-public class XMLClass {
+public class Class2 {
 
     @Getter
     @Setter
