@@ -1,0 +1,55 @@
+sudo /opt/lampp/manager-linux-x64.run
+
+1. THERE ARE TWO COMPONENTS:
+1) OOP: BI-DIRECTIONAL WITH ONE OWNER
+2) RDBMS: UNIDIRECTIONAL WITH ONE OWNER
+
+1. crud of all types
+2. other db crud
+3. controller model crud
+4. keycloak
+
+https://www.bezkoder.com/jpa-one-to-many/
+https://vladmihalcea.com/a-beginners-guide-to-jpa-and-hibernate-cascade-types/
+https://www.baeldung.com/jpa-cascade-types
+https://stackoverflow.com/questions/4329577/how-does-jpa-orphanremoval-true-differ-from-the-on-delete-cascade-dml-clause
+https://stackoverflow.com/questions/10968536/jpa-difference-in-the-use-of-the-mappedby-property-to-define-the-owning-entity
+https://www.baeldung.com/hibernate-inheritance
+https://www.bezkoder.com/jpa-many-to-many/
+https://www.baeldung.com/jpa-joincolumn-vs-mappedby
+https://www.baeldung.com/jpa-one-to-one
+https://www.baeldung.com/hibernate-one-to-many
+https://www.baeldung.com/jpa-joincolumn-vs-mappedbys
+https://hellokoding.com/many-to-many-relationship-mapping-in-jpa-and-hibernate/
+https://stackoverflow.com/questions/25053792/who-is-owner-in-association-with-jpa-and-hibernate
+https://stackoverflow.com/questions/2749689/what-is-the-owning-side-in-an-orm-mapping
+https://stackoverflow.com/questions/16119531/hibernate-jpa-manytoone-vs-onetomany
+https://www.baeldung.com/jpa-joincolumn-vs-mappedby
+https://www.javacodegeeks.com/2011/02/hibernate-mapped-collections.html
+https://dzone.com/articles/deterring-%E2%80%9Ctomany%E2%80%9D
+https://stackoverflow.com/questions/5360795/what-is-the-difference-between-unidirectional-and-bidirectional-jpa-and-hibernat
+https://www.baeldung.com/jpa-join-column
+https://stackoverflow.com/questions/9108224/can-someone-explain-mappedby-in-jpa-and-hibernate
+https://thorben-janssen.com/ultimate-guide-association-mappings-jpa-hibernate/
+https://stackoverflow.com/questions/66841431/why-there-is-no-mappedby-attribute-present-in-manytoone
+https://stackoverflow.com/questions/38817417/what-is-the-meaning-of-hibernate-inversejoincolumns
+
+https://vladmihalcea.com/a-beginners-guide-to-jpa-and-hibernate-cascade-types/
+https://www.geeksforgeeks.org/hibernate-different-cascade-types/
+
+Owner:
+In 1:n relations in most cases the owning side is the n side
+in n:m relations, 1:1 relations or 1:n with mapping tables
+you can choose either side, just choose one.
+
+If you are mapping the entities to a relational database (most probably the case)
+the owning side often can be identified as the entity whose table contains the foreign key
+and mappedBy would refer to the owning side and thus is placed
+on the inverse side of the relation.
+
+As a general rule the owning side of a relation would the side which you'd
+need to update for the change of the relation to be persisted.
+
+If the relationship is bidirectional, the non-owning side must use the mappedBy element of
+the OneToOne annotation to specify the relationship field or property of the owning side.
+
